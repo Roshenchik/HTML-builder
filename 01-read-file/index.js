@@ -6,6 +6,6 @@ const stream = fs.createReadStream(file, 'utf-8');
 let data = '';
 
 stream.on('data', chunk => {
-	data += chunk;
+  data += chunk;
 });
 stream.on('end', () => { console.log(data) });
