@@ -124,13 +124,6 @@ const copyFiles = async () => {
     })
     Promise.all(unpackFiles)
   }))
-
-  // await Promise.all(subDirsFiles.map(([folder, files]) => { //         isert files
-  //   const unpackFiles = files.map(file => {
-  //     return fsPromise.copyFile(path.join(assets, folder, file), path.join(projectDir, 'assets', folder, file))
-  //   })
-  //   Promise.all(unpackFiles)
-  // }))
 };
 
 deleteFolder()
